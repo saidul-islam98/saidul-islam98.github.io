@@ -1,7 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
-title: cv
+title: Cv
 nav: true
 nav_order: 5
 cv_pdf: cv.pdf
@@ -11,4 +11,5 @@ toc:
 ---
 <!-- <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">Google Scholar</a> profile.</u> -->
 
-Download CV [here](https://github.com/saidul-islam98/saidul-islam98.github.io/blob/master/assets/pdf/cv.pdf).
+<!-- Download CV [here](https://github.com/saidul-islam98/saidul-islam98.github.io/blob/master/assets/pdf/cv.pdf). -->
+Download CV <u><a href="{{https://github.com/saidul-islam98/saidul-islam98.github.io/blob/master/assets/pdf/cv.pdf}}">here</a>.</u>
