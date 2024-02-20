@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Mohammed Saidul Islam",
-    "label": "M.Sc. student @York University",
+    "Bio": "M.Sc. student @York University",
     "image": "",
     "email": "saidulis@yorku.ca",
     "url": "https://saidul-islam98.github.io",
-    "summary": "Masters in Computer Science student @York University. Working on intersection of Natural Language Processing and Visualization",
+    "summary": "Masters in Computer Science student @York University. Currently doing research on the intersection of Natural Language Processing and Information Visualization.",
     "location": {
       "address": "Scarborough",
       "city": "Toronto",
@@ -26,7 +26,7 @@
       "position": "Graduate Teaching & Research Assistant",
       "url": "https://lassonde.yorku.ca/eecs",
       "startDate": "2023",
-      "summary": "Working as a TA for EECS 1022: Introduction to Object Oriented Programming, in Winter'24 term. Also, currently doing research in Natural Language Processing with Information Visualization.",
+      "summary": "Working as a TA for EECS 1022: Introduction to Object Oriented Programming, in Winter'24 term. Also, currently doing research on the intersection of Natural Language Processing and Information Visualization.",
       "highlights": ["NLP and Vis."]
     }
   ],
