@@ -8,34 +8,10 @@ nav_order: 2
 ---
 
 <!-- _pages/publications.md -->
-<!-- <div class="publications">
+<div class="publications">
 
 {% bibliography %}
 
-</div> -->
+</div>
 
-<!-- You can also find the articles in my <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">Google Scholar</a></u> profile. -->
-
-## Conference Proceedings
-
-Rahman, M. M.\*, **Islam, M. S.\***, Laskar, M. T. R., Hossain, M. A., & Kamal, A. R. M. (2023). "Multihop Factual Claim Verification Using Natural Language Prompts." <i>Proceedings of the Canadian Conference on Artificial Intelligence, 2023.</i> Full text available at <a href="https://doi.org/10.21428/594757db.63abb0f0">PDF link</a>  
-
-Ekram, Syed Mohammed Sartaj, Adham Arik Rahman, Md Sajid Altaf, **Mohammed Saidul Islam**, Mehrab Mustafy Rahman, Md Mezbaur Rahman, Md Azam Hossain, and Abu Raihan Mostofa Kamal. "BanglaRQA: A Benchmark Dataset for Under-resourced Bangla Language Reading Comprehension-based Question Answering with Diverse Question-Answer Types." <i>In Findings of the Association for Computational Linguistics: EMNLP 2022, pp. 2518-2532. 2022.</i> Full text available at <a href="https://aclanthology.org/2022.findings-emnlp.186/">PDF link</a>
-
-Rahman, Md Mezbaur, Saadman Malik, **Mohammed Saidul Islam**, Fardin Saad, Md Azam Hossain, and Abu Raihan Mostofa Kamal. "An Efficient Approach to Automatic Tag Prediction from Movie Plot Synopses using Transformer-based Language Model." <i>In 2022 25th International Conference on Computer and Information Technology (ICCIT), pp. 501-505. IEEE, 2022.</i> Full text available at <a href="https://ieeexplore.ieee.org/abstract/document/10055349">PDF link</a>
-
-Rabib, Hasnain Karim, Mostafa Galib, Takia Mosharref Nobo, Tanjila Alam Sathi, **Mohammed Saidul Islam**, Abu Raihan Mostofa Kamal, and Md Azam Hossain. "Gender-based Cyberbullying Detection for Under-resourced Bangla Language." <i>In 2022 12th International Conference on Electrical and Computer Engineering (ICECE), pp. 104-107. IEEE, 2022.</i> Full text available at <a href="https://ieeexplore.ieee.org/abstract/document/10088574">PDF link</a>
-
-
-## Journal Articles
-
-Islam, Mohammed Saidul, Iqram Hussain, Md Mezbaur Rahman, Se Jin Park, and Md Azam Hossain. "Explainable artificial intelligence model for stroke prediction using EEG signal." <i>Sensors 22, no. 24 (2022): 9859.</i> Full text available at <a href="https://www.mdpi.com/1424-8220/22/24/9859">PDF link</a>
-
-
-## Preprints
-
-Kabir, Mohsinul*, **Mohammed Saidul Islam\***, Md Tahmid Rahman Laskar, Mir Tafseer Nayeem, M. Saiful Bari, and Enamul Hoque. "Benllmeval: A comprehensive evaluation into the potentials and pitfalls of large language models on bengali nlp." <i>arXiv preprint arXiv:2309.13173 (2023).</i> Full text available at <a href="https://arxiv.org/abs/2309.13173">PDF link</a>
-
-*Equal contribution
-
-You can also find the articles in <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">my Google Scholar profile</a>.</u>
+You can also find the articles in my <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">Google Scholar</a></u> profile.
