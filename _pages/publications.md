@@ -13,7 +13,7 @@ nav_order: 2
 {% bibliography %}
 
 </div>
-You can also find my articles on <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">my Google Scholar profile</a>.</u>
+You can also find my articles on my <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">Google Scholar</a> profile.</u>
 
 
 <!-- 
