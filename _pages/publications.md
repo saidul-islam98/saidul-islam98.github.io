@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: You can also find my articles on my <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">Google Scholar</a> profile.</u>
+description: You can also find my articles on my <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">Google Scholar</a></u> profile.
 nav: true
 nav_order: 2
 ---
