@@ -2,20 +2,20 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: You can also find my articles on my <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">Google Scholar</a></u> profile.
+description: List of selected publications
 nav: true
 nav_order: 2
 ---
 
 <!-- _pages/publications.md -->
-<div class="publications">
+<!-- <div class="publications">
 
 {% bibliography %}
 
-</div>
+</div> -->
 
+<!-- You can also find the articles in my <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">Google Scholar</a></u> profile. -->
 
-<!-- 
 ## Conference Proceedings
 
 Rahman, M. M.\*, **Islam, M. S.\***, Laskar, M. T. R., Hossain, M. A., & Kamal, A. R. M. (2023). "Multihop Factual Claim Verification Using Natural Language Prompts." <i>Proceedings of the Canadian Conference on Artificial Intelligence, 2023.</i> Full text available at <a href="https://doi.org/10.21428/594757db.63abb0f0">PDF link</a>  
@@ -38,4 +38,4 @@ Kabir, Mohsinul*, **Mohammed Saidul Islam\***, Md Tahmid Rahman Laskar, Mir Tafs
 
 *Equal contribution
 
-You can also find my articles on <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">my Google Scholar profile</a>.</u> -->
+You can also find the articles in <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">my Google Scholar profile</a>.</u>
