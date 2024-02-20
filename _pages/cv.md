@@ -5,7 +5,7 @@ title: CV
 nav: true
 nav_order: 5
 cv_pdf: cv.pdf
-description: Download CV <u><a href="{{https://github.com/saidul-islam98/saidul-islam98.github.io/blob/master/assets/pdf/cv.pdf}}">here</a>.</u>
+description: Download CV <u><a href="{{https://saidul-islam98.github.io/assets/pdf/cv.pdf}}">here</a>.</u>
 toc:
   sidebar: left
 ---
