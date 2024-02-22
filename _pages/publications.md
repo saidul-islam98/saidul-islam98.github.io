@@ -14,4 +14,4 @@ nav_order: 2
 
 </div>
 
-You can also find the articles in my <u><a href="{{https://scholar.google.com/citations?user=3Pb203IAAAAJ}}">Google Scholar</a></u> profile.
+You can also find the articles in my <u><a href="https://scholar.google.com/citations?user=3Pb203IAAAAJ">Google Scholar</a></u> profile.
