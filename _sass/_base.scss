@@ -197,18 +197,18 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 100%;
+  width: 30%;
 
-  .more-info {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
+  // .more-info {
+  //   margin-bottom: 5px;
+  //   margin-top: 5px;
+  //   font-family: monospace;
 
-    p {
-      display: inline-block;
-      margin: 0;
-    }
-  }
+  //   p {
+  //     display: inline-block;
+  //     margin: 0;
+  //   }
+  // }
 }
 
 .profile.float-right {
@@ -385,7 +385,7 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3rem;
 
     a {
       i::before {
