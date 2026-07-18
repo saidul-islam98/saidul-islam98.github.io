@@ -1,13 +1,27 @@
 ---
 ---
 <article id="{{ entry.key }}" class="publication-entry">
-  <div class="title">{{ entry.title }}</div>
-  <div class="author">
+  <div class="publication-badges">
+    {% if entry.abbr -%}
+      <span class="publication-badge venue">{{ entry.abbr }}</span>
+    {%- endif %}
+    {% if entry.type == 'article' and entry.journal contains 'arXiv' %}
+      <span class="publication-badge status preprint">Preprint</span>
+    {% elsif entry.type == 'mastersthesis' or entry.type == 'phdthesis' %}
+      <span class="publication-badge status">Thesis</span>
+    {% elsif entry.booktitle contains 'Findings' %}
+      <span class="publication-badge status">Findings</span>
+    {% elsif entry.booktitle contains 'Industry' %}
+      <span class="publication-badge status">Industry</span>
+    {% elsif entry.type == 'inproceedings' %}
+      <span class="publication-badge status">Conference</span>
+    {% endif %}
+  </div>
+  <h3 class="publication-title">{{ entry.title }}</h3>
+  <div class="publication-authors">
     {% for author in entry.author_array %}
       {% assign is_self = false %}
-      {% if author.last == 'Islam' and author.first contains 'Mohammed' %}
-        {% assign is_self = true %}
-      {% endif %}
+      {% if author.last == 'Islam' and author.first contains 'Mohammed' %}{% assign is_self = true %}{% endif %}
       {% unless forloop.first -%}
         {%- if forloop.last %} and {% else %}, {% endif -%}
       {%- endunless %}
@@ -17,15 +31,12 @@
           {{ author.last -}}
         </strong>
       {%- else -%}
-        {{- author.first }}
-        {{ author.last -}}
+        {{ author.first }}
+        {{ author.last }}
       {%- endif %}
     {% endfor %}
   </div>
-  <div class="periodical">
-    {% if entry.abbr -%}
-      <span class="work-meta">{{ entry.abbr }}</span> ·
-    {% endif %}
+  <div class="publication-meta">
     {% if entry.type == 'article' -%}
       <em>{{ entry.journal }}</em>
     {%- elsif entry.type == 'inproceedings' -%}
@@ -33,23 +44,25 @@
     {%- elsif entry.type == 'phdthesis' or entry.type == 'mastersthesis' -%}
       <em>{{ entry.school }}</em>
     {%- endif -%}
-    {%- if entry.year %}, {{ entry.year }}{% endif %}
+    {%- if entry.year -%}
+      <span class="publication-meta-year">{{ entry.year }}</span>
+    {%- endif %}
   </div>
-  <div class="links">
+  <div class="publication-actions">
     {% if entry.html -%}
-      <a href="{{ entry.html }}" class="btn btn-sm z-depth-0">Paper</a>
+      <a href="{{ entry.html }}">Paper</a>
     {%- endif %}
     {% if entry.arxiv -%}
-      <a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0">arXiv</a>
+      <a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>
     {%- endif %}
     {% if entry.pdf -%}
-      <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0">PDF</a>
+      <a href="{{ entry.pdf }}">PDF</a>
     {%- endif %}
     {% if entry.code -%}
-      <a href="{{ entry.code }}" class="btn btn-sm z-depth-0">Code</a>
+      <a href="{{ entry.code }}">Code</a>
     {%- endif %}
     {% if entry.website -%}
-      <a href="{{ entry.website }}" class="btn btn-sm z-depth-0">Project</a>
+      <a href="{{ entry.website }}">Project</a>
     {%- endif %}
   </div>
 </article>
