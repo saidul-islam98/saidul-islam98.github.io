@@ -823,6 +823,23 @@ html[data-theme="dark"] .portfolio-button.primary:hover {
   border-color: var(--primary);
 }
 
+.publication-actions .publication-action-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.publication-actions .publication-action-primary:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .publication-actions .publication-action-primary,
+html[data-theme="dark"] .publication-actions .publication-action-primary:hover {
+  color: #08111f;
+}
+
 .scholar-link {
   color: var(--text-secondary);
   font-size: 0.9rem;

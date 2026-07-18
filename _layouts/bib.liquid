@@ -40,21 +40,47 @@
       <span class="publication-meta-year">{{ entry.year }}</span>
     {%- endif %}
   </div>
-  <div class="publication-actions">
-    {% if entry.html -%}
-      <a href="{{ entry.html }}">Paper</a>
-    {%- endif %}
-    {% if entry.arxiv -%}
-      <a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>
-    {%- endif %}
-    {% if entry.pdf -%}
-      <a href="{{ entry.pdf }}">PDF</a>
-    {%- endif %}
-    {% if entry.code -%}
-      <a href="{{ entry.code }}">Code</a>
-    {%- endif %}
-    {% if entry.website -%}
-      <a href="{{ entry.website }}">Project</a>
-    {%- endif %}
-  </div>
+  {% assign primary_url = null %}
+  {% assign primary_label = null %}
+  {%- capture arxiv_url -%}
+    {%- if entry.arxiv -%}https://arxiv.org/abs/{{ entry.arxiv }}{%- endif -%}
+  {%- endcapture -%}
+  {% if entry.html %}
+    {% assign primary_url = entry.html %}
+    {% assign primary_label = 'Read paper' %}
+  {% elsif entry.pdf %}
+    {% assign primary_url = entry.pdf %}
+    {% assign primary_label = 'Read PDF' %}
+  {% elsif entry.arxiv %}
+    {% assign primary_url = arxiv_url %}
+    {% assign primary_label = 'View arXiv' %}
+  {% elsif entry.website %}
+    {% assign primary_url = entry.website %}
+    {% assign primary_label = 'View project' %}
+  {% elsif entry.code %}
+    {% assign primary_url = entry.code %}
+    {% assign primary_label = 'View code' %}
+  {% endif %}
+  {% if primary_url %}
+    <div class="publication-actions">
+      <a class="publication-action-primary" href="{{ primary_url }}">{{ primary_label }}</a>
+      {% if entry.pdf and entry.pdf != primary_url -%}
+        <a class="publication-action-secondary" href="{{ entry.pdf }}">PDF</a>
+      {%- endif %}
+      {% if entry.arxiv and arxiv_url != primary_url and arxiv_url != entry.pdf -%}
+        <a class="publication-action-secondary" href="{{ arxiv_url }}">arXiv</a>
+      {%- endif %}
+      {% if entry.code and entry.code != primary_url and entry.code != entry.pdf and entry.code != arxiv_url -%}
+        <a class="publication-action-secondary" href="{{ entry.code }}">Code</a>
+      {%- endif %}
+      {% if entry.website
+        and entry.website != primary_url
+        and entry.website != entry.pdf
+        and entry.website != arxiv_url
+        and entry.website != entry.code
+      -%}
+        <a class="publication-action-secondary" href="{{ entry.website }}">Project</a>
+      {%- endif %}
+    </div>
+  {% endif %}
 </article>
