@@ -691,31 +691,6 @@ html[data-theme="dark"] .portfolio-button.primary:hover {
   padding: 0.75rem 0.9rem;
 }
 
-.project-details {
-  margin: 0;
-}
-
-.project-details > div {
-  border-top: 1px solid var(--border);
-  display: grid;
-  gap: 0.75rem;
-  grid-template-columns: 92px minmax(0, 1fr);
-  padding-block: 0.75rem;
-}
-
-.project-details dt {
-  color: var(--text-primary);
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-
-.project-details dd {
-  color: var(--text-secondary);
-  font-size: 0.88rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
 /* Publications */
 .publications {
   display: grid;
@@ -1080,10 +1055,6 @@ footer .container {
     width: 100%;
   }
 
-  .project-details > div {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-  }
 }
 
 @media (max-width: 575.98px) {

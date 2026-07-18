@@ -5,16 +5,8 @@
     {% if entry.abbr -%}
       <span class="publication-badge venue">{{ entry.abbr }}</span>
     {%- endif %}
-    {% if entry.type == 'article' and entry.journal contains 'arXiv' %}
-      <span class="publication-badge status preprint">Preprint</span>
-    {% elsif entry.type == 'mastersthesis' or entry.type == 'phdthesis' %}
-      <span class="publication-badge status">Thesis</span>
-    {% elsif entry.booktitle contains 'Findings' %}
-      <span class="publication-badge status">Findings</span>
-    {% elsif entry.booktitle contains 'Industry' %}
-      <span class="publication-badge status">Industry</span>
-    {% elsif entry.type == 'inproceedings' %}
-      <span class="publication-badge status">Conference</span>
+    {% if entry.status %}
+      <span class="publication-badge status{% if entry.status == 'Preprint' %} preprint{% endif %}">{{ entry.status }}</span>
     {% endif %}
   </div>
   <h3 class="publication-title">{{ entry.title }}</h3>
