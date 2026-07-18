@@ -17,7 +17,7 @@ icon: dino.png # the emoji used as the favicon (alternatively, provide image nam
 
 url: https://saidul-islam98.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: true # set to true if you want to display last updated in the footer
+last_updated: false # retained for theme compatibility; the custom footer omits update timestamps
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -176,7 +176,7 @@ collections:
 announcements:
   enabled: true
   scrollable: false # show a concise, naturally flowing timeline
-  limit: 6 # leave blank to include all the news in the `_news` folder
+  limit: 3 # keep the homepage focused on recent milestones
 
 latest_posts:
   enabled: true
