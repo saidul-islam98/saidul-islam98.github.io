@@ -30,7 +30,7 @@
       <em>{{ entry.journal }}</em>
     {%- elsif entry.type == 'inproceedings' -%}
       <em>{{ entry.booktitle }}</em>
-    {%- elsif entry.type == 'phdthesis' -%}
+    {%- elsif entry.type == 'phdthesis' or entry.type == 'mastersthesis' -%}
       <em>{{ entry.school }}</em>
     {%- endif -%}
     {%- if entry.year %}, {{ entry.year }}{% endif %}
