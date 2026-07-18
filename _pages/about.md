@@ -16,11 +16,6 @@ nav: false
         <a class="portfolio-button primary" href="{{ '/work/' | relative_url }}">View selected work</a>
         <a class="portfolio-button secondary" href="{{ '/assets/pdf/resume.pdf' | relative_url }}">Download résumé</a>
       </div>
-      <div class="hero-metrics" aria-label="Selected engineering outcomes">
-        <div class="metric"><strong>70%</strong><span>faster batched inference</span></div>
-        <div class="metric"><strong>85%</strong><span>faster multimodal summarization</span></div>
-        <div class="metric"><strong>18M</strong><span>image–text pairs supported</span></div>
-      </div>
     </div>
     <div class="hero-portrait">
       <img src="{{ '/assets/img/saidul-profile-hero.webp' | relative_url }}" alt="Mohammed Saidul Islam wearing a graduation cap and gown" width="960" height="1200" fetchpriority="high">
