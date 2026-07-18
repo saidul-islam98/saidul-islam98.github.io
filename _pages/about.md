@@ -108,7 +108,7 @@ nav: false
       </div>
       <p>Selected career and publication milestones.</p>
     </div>
-    {% include news.liquid %}
+    {% include news.liquid limit=true %}
   </section>
 
   <section class="portfolio-section contact-section" aria-labelledby="contact-heading">
