@@ -17,6 +17,9 @@ on:
       - "*.json"
       - "Gemfile"
       - "Gemfile.lock"
+      - "package.json"
+      - "package-lock.json"
+      - "purgecss.config.js"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
