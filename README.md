@@ -4,13 +4,12 @@ Source for [saidul-islam98.github.io](https://saidul-islam98.github.io), an indu
 
 ## Content sources
 
-Public claims should remain grounded in the current resume and publication export:
+Public claims should remain grounded in the résumé and publication record committed here:
 
-- `../resources/Saidul_ML_Resume_ATS.pdf`
-- `../resources/citations.csv`
+- `assets/pdf/resume.pdf`
 - `_bibliography/papers.bib`
 
-The two `citations.csv` records about composting and avian microbiology are name collisions and are intentionally excluded. Update `assets/pdf/resume.pdf` and the compatibility URL `assets/pdf/cv.pdf` together whenever the resume changes.
+`assets/pdf/cv.pdf` is a compatibility copy of the résumé. Update both PDF paths together whenever the résumé changes.
 
 ## Main content
 

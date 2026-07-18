@@ -1,26 +1,17 @@
-# Contributing to al-folio
+# Contributing
 
-Thank you for considering contributing to al-folio!
+Thank you for considering a contribution to this portfolio.
 
 ## Pull Requests
 
-We welcome your pull requests (PRs).
-For minor fixes (e.g., documentation improvements), feel free to submit a PR directly.
-If you would like to implement a new feature or a bug, please make sure you (or someone else) has opened an appropriate issue first; in your PR, please mention the issue it addresses.
+Pull requests for corrections and focused improvements are welcome. For a larger feature or bug fix, open an issue first and link it from the pull request.
+
+Before submitting, run the local validation commands in [README.md](README.md#local-validation).
 
 ## Issues
 
-We use GitHub issues to track bugs and feature requests.
-Before submitting an issue, please make sure:
-
-1. You have read [the FAQ section](FAQ.md) of the README and your question is NOT addressed there.
-2. You have done your best to ensure that your issue is NOT a duplicate of one of [the previous issues](https://github.com/alshedivat/al-folio/issues).
-3. Your issue is either a bug (unexpected/undesirable behavior) or a feature request.
-   If it is just a question, please ask it in the [Discussions](https://github.com/alshedivat/al-folio/discussions) forum.
-
-When submitting an issue, please make sure to use the appropriate template.
+Use GitHub issues for portfolio bugs and feature requests. Search existing issues before opening a new one, then use the appropriate issue form.
 
 ## License
 
-By contributing to al-folio, you agree that your contributions will be licensed
-under the LICENSE file in the root directory of the source tree.
+By contributing, you agree that your contribution will be licensed under the repository's [LICENSE](LICENSE).
