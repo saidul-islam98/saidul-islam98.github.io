@@ -2,22 +2,23 @@
   --font-display: "Geist Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --font-body: "Geist Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --font-mono: "Geist Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  --page-bg: #031615;
-  --surface: #082421;
-  --surface-subtle: #0b2b27;
-  --surface-highlight: #103730;
-  --text-primary: #eef8f4;
-  --text-secondary: #b4cbc3;
-  --text-tertiary: #819f96;
-  --border: #1c4039;
-  --border-strong: #2a554b;
-  --primary: #7ee2bd;
-  --primary-hover: #a1efcf;
-  --primary-soft: #123e34;
-  --primary-ink: #d7f9ec;
-  --success: #7ee2bd;
-  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.22);
-  --shadow-md: 0 18px 52px rgba(0, 0, 0, 0.32);
+  --page-bg: #f7f7f4;
+  --surface: #ffffff;
+  --surface-subtle: #f0f1ee;
+  --surface-highlight: #e9eeeb;
+  --text-primary: #031615;
+  --text-secondary: #44514f;
+  --text-tertiary: #687370;
+  --border: #d9dfdc;
+  --border-strong: #bec9c4;
+  --primary: #031615;
+  --primary-hover: #0c403a;
+  --primary-soft: #e1ebe7;
+  --primary-ink: #031615;
+  --on-primary: #ffffff;
+  --success: #176b4a;
+  --shadow-sm: 0 5px 18px rgba(3, 22, 21, 0.06);
+  --shadow-md: 0 16px 44px rgba(3, 22, 21, 0.1);
   --space-1: 0.375rem;
   --space-2: 0.75rem;
   --space-3: 1rem;
@@ -49,6 +50,7 @@ html[data-theme="dark"] {
   --primary-hover: #a1efcf;
   --primary-soft: #123e34;
   --primary-ink: #d7f9ec;
+  --on-primary: #031615;
   --success: #7ee2bd;
   --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.22);
   --shadow-md: 0 18px 52px rgba(0, 0, 0, 0.32);
@@ -151,7 +153,7 @@ button:focus-visible {
 
 /* Navigation */
 #navbar {
-  background: rgba(3, 22, 21, 0.94);
+  background: rgba(247, 247, 244, 0.94);
   border-bottom: 1px solid var(--border);
   min-height: 68px;
 }
@@ -348,19 +350,14 @@ html[data-theme="dark"] #navbar {
 
 .portfolio-button.primary {
   background: var(--primary);
-  color: #031615;
+  color: var(--on-primary);
 }
 
 .portfolio-button.primary:hover {
   background: var(--primary-hover);
   border-color: var(--primary-hover);
-  color: #031615;
+  color: var(--on-primary);
   transform: translateY(-1px);
-}
-
-html[data-theme="dark"] .portfolio-button.primary,
-html[data-theme="dark"] .portfolio-button.primary:hover {
-  color: #031615;
 }
 
 .portfolio-button.secondary {
@@ -783,18 +780,13 @@ html[data-theme="dark"] .portfolio-button.primary:hover {
 .publication-actions .publication-action-primary {
   background: var(--primary);
   border-color: var(--primary);
-  color: #031615;
+  color: var(--on-primary);
 }
 
 .publication-actions .publication-action-primary:hover {
   background: var(--primary-hover);
   border-color: var(--primary-hover);
-  color: #031615;
-}
-
-html[data-theme="dark"] .publication-actions .publication-action-primary,
-html[data-theme="dark"] .publication-actions .publication-action-primary:hover {
-  color: #031615;
+  color: var(--on-primary);
 }
 
 .scholar-link {
