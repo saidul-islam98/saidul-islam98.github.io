@@ -18,23 +18,25 @@
   --font-display: "Manrope", Arial, sans-serif;
   --font-body: "Inter", Arial, sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  --page-bg: #f7f7f4;
+  --page-bg: #f7f8fc;
   --surface: #ffffff;
-  --surface-subtle: #f0f1ee;
-  --surface-highlight: #e9eeeb;
-  --text-primary: #031615;
-  --text-secondary: #44514f;
-  --text-tertiary: #687370;
-  --border: #d9dfdc;
-  --border-strong: #bec9c4;
-  --primary: #031615;
-  --primary-hover: #0c403a;
-  --primary-soft: #e1ebe7;
-  --primary-ink: #031615;
+  --surface-subtle: #f0f3fa;
+  --surface-highlight: #e8edf8;
+  --text-primary: #172033;
+  --text-secondary: #46516a;
+  --text-tertiary: #68738a;
+  --border: #d8deeb;
+  --border-strong: #bbc6da;
+  --primary: #2d55c7;
+  --primary-hover: #2144a8;
+  --primary-soft: #e7edff;
+  --primary-ink: #2144a8;
   --on-primary: #ffffff;
-  --success: #176b4a;
-  --shadow-sm: 0 5px 18px rgba(3, 22, 21, 0.06);
-  --shadow-md: 0 16px 44px rgba(3, 22, 21, 0.1);
+  --accent: #c45532;
+  --accent-soft: #fff0e9;
+  --success: #0e745c;
+  --shadow-sm: 0 6px 20px rgba(23, 32, 51, 0.08);
+  --shadow-md: 0 18px 48px rgba(23, 32, 51, 0.14);
   --space-1: 0.375rem;
   --space-2: 0.75rem;
   --space-3: 1rem;
@@ -53,23 +55,25 @@
 }
 
 html[data-theme="dark"] {
-  --page-bg: #031615;
-  --surface: #082421;
-  --surface-subtle: #0b2b27;
-  --surface-highlight: #103730;
-  --text-primary: #eef8f4;
-  --text-secondary: #b4cbc3;
-  --text-tertiary: #819f96;
-  --border: #1c4039;
-  --border-strong: #2a554b;
-  --primary: #7ee2bd;
-  --primary-hover: #a1efcf;
-  --primary-soft: #123e34;
-  --primary-ink: #d7f9ec;
-  --on-primary: #031615;
-  --success: #7ee2bd;
+  --page-bg: #0c1220;
+  --surface: #131c2e;
+  --surface-subtle: #18233a;
+  --surface-highlight: #202d48;
+  --text-primary: #f4f7fb;
+  --text-secondary: #bdc7da;
+  --text-tertiary: #929db2;
+  --border: #2b3854;
+  --border-strong: #405071;
+  --primary: #9eb1ff;
+  --primary-hover: #c3ceff;
+  --primary-soft: #202d55;
+  --primary-ink: #cbd5ff;
+  --on-primary: #0c1220;
+  --accent: #ff9b77;
+  --accent-soft: #3d2927;
+  --success: #6fd5b7;
   --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.22);
-  --shadow-md: 0 18px 52px rgba(0, 0, 0, 0.32);
+  --shadow-md: 0 18px 52px rgba(0, 0, 0, 0.36);
   --global-bg-color: var(--page-bg);
   --global-text-color: var(--text-primary);
   --global-text-color-light: var(--text-secondary);
@@ -169,13 +173,13 @@ button:focus-visible {
 
 /* Navigation */
 #navbar {
-  background: rgba(247, 247, 244, 0.94);
+  background: rgba(247, 248, 252, 0.94);
   border-bottom: 1px solid var(--border);
   min-height: 68px;
 }
 
 html[data-theme="dark"] #navbar {
-  background: rgba(3, 22, 21, 0.94);
+  background: rgba(12, 18, 32, 0.94);
 }
 
 @supports (backdrop-filter: blur(14px)) {
@@ -311,10 +315,14 @@ html[data-theme="dark"] #navbar {
 /* Hero */
 .portfolio-hero {
   align-items: center;
+  background: linear-gradient(135deg, var(--surface) 0%, var(--surface-subtle) 62%, var(--primary-soft) 100%);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
   display: grid;
   column-gap: clamp(2.5rem, 5vw, 4rem);
   grid-template-columns: minmax(0, 1.45fr) minmax(210px, 0.55fr);
-  padding-block: clamp(3rem, 5vw, 4rem) clamp(2rem, 4vw, 3rem);
+  margin-block: clamp(1.25rem, 3vw, 2rem) clamp(2.75rem, 5vw, 4rem);
+  padding: clamp(2rem, 4.5vw, 3.5rem);
   row-gap: 1.5rem;
 }
 
@@ -334,15 +342,6 @@ html[data-theme="dark"] #navbar {
   margin-bottom: var(--space-3);
   max-width: 790px;
 }
-
-.hero-role {
-  color: var(--primary-ink) !important;
-  font-size: clamp(1.02rem, 1.4vw, 1.18rem);
-  font-weight: 650;
-  line-height: 1.5;
-  margin-bottom: var(--space-2);
-}
-
 .hero-lede {
   color: var(--text-secondary);
   font-size: clamp(1rem, 1.2vw, 1.08rem);
@@ -379,7 +378,7 @@ html[data-theme="dark"] #navbar {
 .hero-proof {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem 0.75rem;
+  gap: 0.5rem;
   list-style: none;
   margin: var(--space-3) 0 0;
   padding: 0;
@@ -387,16 +386,15 @@ html[data-theme="dark"] #navbar {
 
 .hero-proof li {
   align-items: center;
-  color: var(--text-tertiary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--primary-ink);
   display: inline-flex;
   font-size: 0.78rem;
   font-weight: 650;
-}
-
-.hero-proof li:not(:last-child)::after {
-  color: var(--border-strong);
-  content: "|";
-  margin-left: 0.75rem;
+  line-height: 1.2;
+  padding: 0.42rem 0.7rem;
 }
 
 .portfolio-button {
@@ -446,7 +444,7 @@ html[data-theme="dark"] #navbar {
 }
 
 .hero-portrait::before {
-  background: var(--primary-soft);
+  background: linear-gradient(145deg, var(--primary-soft), var(--accent-soft));
   border-radius: 1.25rem;
   content: "";
   inset: 10px -10px -10px 10px;
@@ -457,7 +455,7 @@ html[data-theme="dark"] #navbar {
   align-items: center;
   background: var(--surface-subtle);
   border: 1px solid var(--border);
-  border-left: 3px solid var(--primary);
+  border-left: 3px solid var(--accent);
   border-radius: 0.75rem;
   display: grid;
   gap: 0.8rem 1.5rem;
@@ -575,7 +573,7 @@ html[data-theme="dark"] #navbar {
 }
 
 .work-card-feature {
-  background: var(--surface-subtle);
+  background: linear-gradient(135deg, var(--surface-subtle), var(--primary-soft));
   grid-column: 1 / -1;
   padding: clamp(1.5rem, 3vw, 2rem);
 }
@@ -745,7 +743,7 @@ html[data-theme="dark"] #navbar {
 
 .contact-panel {
   align-items: center;
-  background: var(--surface-subtle);
+  background: linear-gradient(135deg, var(--surface-subtle), var(--primary-soft));
   border: 1px solid var(--border);
   border-radius: 1rem;
   display: flex;
@@ -1203,11 +1201,11 @@ footer .container {
   .portfolio-hero {
     gap: 1.75rem;
     grid-template-columns: 1fr;
-    padding-block: 2.5rem 2rem;
+    padding: 1.75rem 1.5rem 2rem;
   }
 
   .portfolio-hero h1 {
-    font-size: clamp(2.15rem, 9vw, 2.7rem);
+    font-size: clamp(2rem, 8vw, 2.45rem);
   }
 
   .hero-portrait {
@@ -1215,14 +1213,25 @@ footer .container {
     width: min(62vw, 220px);
   }
 
-  .hero-actions,
-  .hero-links {
+  .hero-actions {
     align-items: stretch;
     flex-direction: column;
   }
 
-  .portfolio-button {
+  .hero-links {
+    align-items: center;
+    display: grid;
+    gap: 0.4rem 0.75rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-links .portfolio-button {
+    grid-column: 1 / -1;
     width: 100%;
+  }
+
+  .hero-links > a:not(.portfolio-button) {
+    padding-block: 0.2rem;
   }
 
   .expertise-grid,

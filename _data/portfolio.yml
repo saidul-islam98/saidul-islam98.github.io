@@ -5,7 +5,7 @@
   homepage_feature: true
   homepage_order: 1
   work_order: 1
-  meta: EMNLP 2026 Main - author-confirmed
+  meta: EMNLP 2026 Main
   summary: A benchmark for evaluating whether AI agents can complete end-to-end data-science workflows in real computer environments using notebooks, IDEs, terminals, browsers, and databases.
   evidence: 275 diverse tasks across the data-science lifecycle, 15 evaluated models, and deterministic evaluators. The best reported agent reached 56.70% task success.
   tags:
@@ -47,10 +47,10 @@
   homepage: true
   homepage_order: 3
   work_order: 3
-  meta: Vector Institute · Multimodal data · 2025 preprint
-  summary: A large-scale extraction and preprocessing workflow for compound medical figures, subfigures, captions, and subcaptions.
+  meta: MICCAI 2026 · Multimodal medical AI
+  summary: An open multimodal dataset and scalable pipeline linking biomedical figures with captions and subcaptions for medical vision-language learning.
   contribution: Owned preprocessing and batched vLLM inference for Qwen2.5-VL and Qwen2.5 summary generation.
-  evidence: Reduced extraction latency by 70% and summary generation latency by 85%, while supporting OpenCLIP training on 18M image-text pairs.
+  evidence: Scales compound-figure extraction, summarization, and OpenCLIP training across 18 million biomedical image-text pairs with optimized batched VLM inference.
   tags:
     - VLMs
     - vLLM

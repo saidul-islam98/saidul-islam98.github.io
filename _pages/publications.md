@@ -10,7 +10,7 @@ nav_order: 3
 <section class="publications-section" aria-labelledby="selected-publications-heading">
   <p class="section-marker">Research highlights</p>
   <h2 id="selected-publications-heading">Selected publications</h2>
-  <p class="publications-intro">A focused selection of recent work. DSAgentBench is listed as EMNLP 2026 Main based on author-confirmed acceptance.</p>
+  <p class="publications-intro">Recent peer-reviewed work and preprints in AI agents, multimodal systems, evaluation, and visualization.</p>
   {% include selected_papers.liquid %}
 </section>
 
