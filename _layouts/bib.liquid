@@ -40,6 +40,9 @@
       <span class="publication-meta-year">{{ entry.year }}</span>
     {%- endif %}
   </div>
+  {% if entry.note %}
+    <p class="publication-note">{{ entry.note }}</p>
+  {% endif %}
   {% assign primary_url = null %}
   {% assign primary_label = null %}
   {%- capture arxiv_url -%}

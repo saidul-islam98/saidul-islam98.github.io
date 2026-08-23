@@ -1,3 +1,20 @@
-<div class="publications">
-  {% bibliography --group_by none --query @*[selected=true]* %}
+<div class="selected-publications">
+  <div class="selected-publication">
+    {% bibliography --group_by none --query @*[homepage_order=1] %}
+  </div>
+  <div class="selected-publication">
+    {% bibliography --group_by none --query @*[homepage_order=2] %}
+  </div>
+  <div class="selected-publication">
+    {% bibliography --group_by none --query @*[homepage_order=3] %}
+  </div>
+  <div class="selected-publication">
+    {% bibliography --group_by none --query @*[homepage_order=4] %}
+  </div>
+  <div class="selected-publication">
+    {% bibliography --group_by none --query @*[homepage_order=5] %}
+  </div>
+  <div class="selected-publication">
+    {% bibliography --group_by none --query @*[homepage_order=6] %}
+  </div>
 </div>

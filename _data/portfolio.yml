@@ -1,0 +1,165 @@
+- id: dsagentbench
+  title: DSAgentBench
+  category: agents-evaluation
+  homepage: true
+  homepage_feature: true
+  homepage_order: 1
+  work_order: 1
+  meta: EMNLP 2026 Main - author-confirmed
+  summary: A benchmark for evaluating whether AI agents can complete end-to-end data-science workflows in real computer environments using notebooks, IDEs, terminals, browsers, and databases.
+  evidence: 275 diverse tasks across the data-science lifecycle, 15 evaluated models, and deterministic evaluators. The best reported agent reached 56.70% task success.
+  tags:
+    - Agents
+    - Computer Use
+    - Evaluation
+    - Data Science
+    - Tool Orchestration
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2608.10366
+    - label: Code
+      url: https://github.com/vis-nlp/DSAgentBench
+
+- id: fine-grained-benchmark-generation
+  title: Fine-Grained Benchmark Generation
+  category: agents-evaluation
+  homepage: true
+  homepage_feature: true
+  homepage_order: 2
+  work_order: 2
+  meta: Vector Institute · Foundation-model evaluation · 2026 preprint
+  summary: A reference-grounded multi-agent pipeline for generating, verifying, repairing, and deduplicating technically demanding evaluation tasks.
+  contribution: Built OCR ingestion and a multi-agent designer and verifier workflow with iterative repair, trace-aware validation, and semantic deduplication.
+  evidence: Trace-aware quality control connects source ingestion to final benchmark validation.
+  tags:
+    - OCR
+    - Multi-agent Systems
+    - Benchmark Generation
+    - Evaluation
+    - Deduplication
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2605.18824
+
+- id: open-pmc-18m
+  title: Open-PMC-18M
+  category: multimodal-systems
+  homepage: true
+  homepage_order: 3
+  work_order: 3
+  meta: Vector Institute · Multimodal data · 2025 preprint
+  summary: A large-scale extraction and preprocessing workflow for compound medical figures, subfigures, captions, and subcaptions.
+  contribution: Owned preprocessing and batched vLLM inference for Qwen2.5-VL and Qwen2.5 summary generation.
+  evidence: Reduced extraction latency by 70% and summary generation latency by 85%, while supporting OpenCLIP training on 18M image-text pairs.
+  tags:
+    - VLMs
+    - vLLM
+    - Data Pipelines
+    - Medical AI
+    - HPC
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2506.02738
+
+- id: rl-text2vis
+  title: RL-Text2Vis
+  category: post-training-generation
+  homepage: true
+  homepage_order: 4
+  work_order: 4
+  meta: EACL 2026 Main · Post-training
+  summary: A GRPO framework that evaluates text-to-visualization outputs after code execution using textual, executable, and visual feedback.
+  contribution: Co-developed post-execution multimodal feedback for aligning generated text, code, and rendered visualizations.
+  evidence: Improves code executability and chart quality over strong prompting and supervised baselines.
+  tags:
+    - GRPO
+    - Post-training
+    - Code Generation
+    - Visualization
+    - VLM Evaluation
+  links:
+    - label: Paper
+      url: https://aclanthology.org/2026.eacl-long.317/
+    - label: Code
+      url: https://github.com/vis-nlp/RL-Text2Vis
+
+- id: dashboardqa
+  title: DashboardQA
+  category: agents-evaluation
+  homepage: true
+  homepage_order: 5
+  work_order: 5
+  meta: EACL 2026 Findings · Multimodal agents
+  summary: A benchmark for agents that answer questions through real interactive dashboards.
+  contribution: Co-created the benchmark to expose failures in grounding, planning, GUI interaction, and multi-view reasoning.
+  evidence: Tests filters, tabs, view switching, visual grounding, and cross-view reasoning in realistic dashboard environments.
+  tags:
+    - Multimodal Agents
+    - GUI Interaction
+    - Benchmarks
+    - Planning
+    - Visual Reasoning
+  links:
+    - label: Paper
+      url: https://aclanthology.org/2026.findings-eacl.177/
+    - label: Project
+      url: https://github.com/vis-nlp/DashboardQA
+
+- id: chartqapro
+  title: ChartQAPro
+  category: multimodal-systems
+  homepage: true
+  homepage_order: 6
+  work_order: 6
+  meta: ACL 2025 Findings · Benchmarking
+  summary: A challenging chart question-answering benchmark built around diverse real-world visualizations.
+  contribution: Co-created the benchmark and evaluation protocol for open and closed vision-language models.
+  evidence: 1,341 charts and 1,948 questions evaluated 21 VLMs.
+  tags:
+    - Chart QA
+    - VLMs
+    - Benchmarking
+    - Multimodal Reasoning
+  links:
+    - label: Paper
+      url: https://aclanthology.org/2025.findings-acl.978/
+    - label: Project
+      url: https://github.com/vis-nlp/ChartQAPro
+
+- id: lvlm-judges
+  title: Large and Tiny LVLM Judges
+  category: agents-evaluation
+  homepage: false
+  work_order: 7
+  meta: ACL and EMNLP 2025 Industry Tracks · Evaluation
+  summary: Automated evaluation protocols for chart models using large and compact vision-language model judges.
+  contribution: Evaluated judge reliability, robustness, and efficiency across chart comprehension and reasoning tasks.
+  evidence: A 2B judge matched a 7B baseline while reducing inference latency.
+  tags:
+    - Model-as-Judge
+    - VLMs
+    - Evaluation
+    - Efficiency
+  links:
+    - label: ACL paper
+      url: https://aclanthology.org/2025.acl-industry.83/
+    - label: EMNLP paper
+      url: https://aclanthology.org/2025.emnlp-industry.134/
+
+- id: datanarrative
+  title: DataNarrative
+  category: post-training-generation
+  homepage: false
+  work_order: 8
+  meta: EMNLP 2024 Main · Agentic generation
+  summary: An Actor-Critic workflow for planning, reflecting on, and revising data-driven stories with visualizations.
+  contribution: Introduced a benchmark and multi-agent workflow for automated data-driven storytelling.
+  evidence: Includes 1,449 real-world data stories for system and human evaluation.
+  tags:
+    - Multi-agent Systems
+    - Data Storytelling
+    - Visualization
+    - Evaluation
+  links:
+    - label: Paper
+      url: https://aclanthology.org/2024.emnlp-main.1073/

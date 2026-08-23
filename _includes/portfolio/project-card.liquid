@@ -1,0 +1,18 @@
+{% assign project = include.project %}
+<article class="{{ include.card_class }}{% if include.home and project.homepage_feature %} work-card-feature{% endif %}">
+  <p class="work-meta">{{ project.meta }}</p>
+  <h3>{{ project.title }}</h3>
+  <p class="project-summary">{{ project.summary }}</p>
+  {% if project.contribution %}
+    <p class="project-contribution"><strong>Contribution:</strong> {{ project.contribution }}</p>
+  {% endif %}
+  <p class="project-impact"><strong>Evidence:</strong> {{ project.evidence }}</p>
+  {% if project.tags %}
+    <ul class="project-tags" aria-label="{{ project.title }} topics">
+      {% for tag in project.tags %}
+        <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  {% include portfolio/project-links.liquid links=project.links %}
+</article>

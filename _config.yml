@@ -8,10 +8,10 @@ middle_name: Saidul
 last_name: Islam
 email: saidulislam143.si@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Associate Applied Machine Learning Specialist at Vector Institute building reliable ML systems for foundation-model evaluation and multimodal AI.
+  Applied ML specialist at the Vector Institute building computer-use agents, LLM/VLM evaluation systems, multimodal data pipelines, post-training systems, and efficient model inference.
 footer_text: >
   Built with Jekyll and hosted on GitHub Pages.
-keywords: applied machine learning, research engineering, multimodal AI, vision language models, foundation model evaluation, agentic AI
+keywords: applied machine learning, research engineering, computer-use agents, data-science workflows, multimodal AI, vision language models, foundation model evaluation, agentic AI, ML systems
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: dino.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

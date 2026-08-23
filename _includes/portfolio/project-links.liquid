@@ -1,0 +1,10 @@
+{% if include.links %}
+  <div class="work-links">
+    {% for link in include.links %}
+      <a href="{{ link.url }}">
+        {{- link.label }}
+        <span aria-hidden="true">↗</span></a
+      >
+    {% endfor %}
+  </div>
+{% endif %}
