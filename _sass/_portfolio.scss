@@ -315,24 +315,23 @@ html[data-theme="dark"] #navbar {
 /* Hero */
 .portfolio-hero {
   align-items: center;
-  background: linear-gradient(135deg, var(--surface) 0%, var(--surface-subtle) 62%, var(--primary-soft) 100%);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 1.25rem;
   display: grid;
   column-gap: clamp(2.5rem, 5vw, 4rem);
   grid-template-columns: minmax(0, 1.45fr) minmax(210px, 0.55fr);
   margin-block: clamp(1.25rem, 3vw, 2rem) clamp(2.75rem, 5vw, 4rem);
-  padding: clamp(2rem, 4.5vw, 3.5rem);
+  padding: clamp(1.5rem, 3.5vw, 2.5rem);
   row-gap: 1.5rem;
 }
 
 .hero-kicker {
   color: var(--primary);
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   margin-bottom: var(--space-2);
-  text-transform: uppercase;
 }
 
 .portfolio-hero h1 {
@@ -438,17 +437,14 @@ html[data-theme="dark"] #navbar {
 }
 
 .hero-portrait {
+  aspect-ratio: 1;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow-sm);
   justify-self: end;
+  overflow: hidden;
   position: relative;
   width: min(100%, 250px);
-}
-
-.hero-portrait::before {
-  background: linear-gradient(145deg, var(--primary-soft), var(--accent-soft));
-  border-radius: 1.25rem;
-  content: "";
-  inset: 10px -10px -10px 10px;
-  position: absolute;
 }
 
 .hero-latest {
@@ -510,13 +506,11 @@ html[data-theme="dark"] #navbar {
 }
 
 .hero-portrait img {
-  border: 1px solid var(--border);
-  border-radius: 1.25rem;
-  box-shadow: var(--shadow-md);
   display: block;
-  height: auto;
-  max-width: 100%;
-  position: relative;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.18);
+  transform-origin: 50% 100%;
   width: 100%;
 }
 
@@ -585,13 +579,12 @@ html[data-theme="dark"] #navbar {
 .work-meta,
 .project-meta {
   color: var(--text-tertiary);
-  font-family: var(--font-mono);
-  font-size: 0.72rem !important;
+  font-family: var(--font-body);
+  font-size: 0.875rem !important;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   line-height: 1.5;
   margin-bottom: 0.75rem;
-  text-transform: uppercase;
 }
 
 .work-impact {
@@ -632,7 +625,7 @@ html[data-theme="dark"] #navbar {
   background: var(--primary-soft);
   border-radius: 999px;
   color: var(--primary-ink);
-  font-size: 0.72rem;
+  font-size: 0.8125rem;
   font-weight: 650;
   line-height: 1.3;
   padding: 0.3rem 0.5rem;
@@ -1170,6 +1163,109 @@ footer .container {
   text-align: left;
 }
 
+/* Recruiter homepage: role, results, and concise supporting evidence. */
+.hero-professional-links {
+  margin-top: 0.9rem;
+}
+
+.hero-results {
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 1rem;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding-top: 1.5rem;
+}
+
+.hero-results dt {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hero-results dd {
+  color: var(--primary);
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 750;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.result-model {
+  white-space: nowrap;
+}
+
+.result-context {
+  color: var(--text-secondary);
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.portfolio-home .portfolio-section {
+  padding-block: clamp(2rem, 4vw, 3.5rem);
+}
+
+.portfolio-home .section-heading {
+  margin-bottom: 1.75rem;
+}
+
+.portfolio-home .updates-section {
+  padding-block: 1.75rem;
+}
+
+.updates-section .section-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.updates-section .section-marker,
+.updates-section .section-heading > p {
+  display: none;
+}
+
+.updates-section h2 {
+  font-size: 1.5rem;
+}
+
+.updates-section .news th,
+.updates-section .news td {
+  padding-block: 0.75rem !important;
+}
+
+.updates-section .section-action {
+  margin-top: 1rem;
+}
+
+.portfolio-home .work-grid,
+.selected-publications-compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.portfolio-home .work-card {
+  padding: 1.25rem;
+}
+
+.portfolio-home .project-summary,
+.portfolio-home .project-contribution,
+.portfolio-home .project-impact {
+  font-size: 1rem !important;
+  line-height: 1.6;
+}
+
+.timeline-detail {
+  font-size: 0.9rem;
+  margin-top: 0.4rem !important;
+}
+
 @media (max-width: 960px) {
   .portfolio-hero {
     grid-template-columns: minmax(0, 1fr) 220px;
@@ -1189,7 +1285,65 @@ footer .container {
   }
 }
 
+@media (min-width: 761px) and (max-width: 1050px) {
+  .portfolio-home .work-grid,
+  .selected-publications-compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 760px) {
+  .hero-copy {
+    order: 0;
+  }
+
+  .hero-portrait {
+    order: 2;
+  }
+
+  .hero-latest {
+    order: 3;
+  }
+
+  .hero-results {
+    order: 1;
+    grid-template-columns: 1fr;
+    padding-top: 1.25rem;
+  }
+
+  .hero-results > div {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-results dt {
+    align-self: center;
+    margin: 0;
+  }
+
+  .hero-results dd {
+    font-size: 1.3rem;
+  }
+
+  .hero-latest-label span {
+    display: none;
+  }
+
+  .hero-latest {
+    gap: 0.65rem;
+  }
+
+  .hero-latest .work-links {
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .portfolio-home .work-grid,
+  .selected-publications-compact {
+    grid-template-columns: 1fr;
+  }
+
   .post-header {
     padding-block: 3.5rem 2.5rem;
   }
@@ -1205,17 +1359,24 @@ footer .container {
   }
 
   .portfolio-hero h1 {
-    font-size: clamp(2rem, 8vw, 2.45rem);
+    font-size: clamp(1.85rem, 7.5vw, 2.2rem);
   }
 
   .hero-portrait {
     justify-self: center;
-    width: min(62vw, 220px);
+    width: min(40vw, 128px);
   }
 
   .hero-actions {
     align-items: stretch;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 0.65rem;
+  }
+
+  .hero-actions .portfolio-button {
+    flex: 1;
+    font-size: 0.85rem;
+    padding-inline: 0.75rem;
   }
 
   .hero-links {
@@ -1340,5 +1501,12 @@ footer .container {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-links.hero-professional-links {
+    display: flex;
+    gap: 1rem;
   }
 }

@@ -1,20 +1,28 @@
-<div class="selected-publications">
-  <div class="selected-publication">
-    {% bibliography --group_by none --query @*[homepage_order=1] %}
+{% if include.compact %}
+  <div class="selected-publications selected-publications-compact">
+    <div class="selected-publication">{% bibliography --group_by none --query @*[key=islam2026benchmark] %}</div>
+    <div class="selected-publication">{% bibliography --group_by none --query @*[key=rahman2026dsagentbench] %}</div>
+    <div class="selected-publication">{% bibliography --group_by none --query @*[key=rahman2026rltext2vis] %}</div>
   </div>
-  <div class="selected-publication">
-    {% bibliography --group_by none --query @*[homepage_order=2] %}
+{% else %}
+  <div class="selected-publications">
+    <div class="selected-publication">
+      {% bibliography --group_by none --query @*[homepage_order=1] %}
+    </div>
+    <div class="selected-publication">
+      {% bibliography --group_by none --query @*[homepage_order=2] %}
+    </div>
+    <div class="selected-publication">
+      {% bibliography --group_by none --query @*[homepage_order=3] %}
+    </div>
+    <div class="selected-publication">
+      {% bibliography --group_by none --query @*[homepage_order=4] %}
+    </div>
+    <div class="selected-publication">
+      {% bibliography --group_by none --query @*[homepage_order=5] %}
+    </div>
+    <div class="selected-publication">
+      {% bibliography --group_by none --query @*[homepage_order=6] %}
+    </div>
   </div>
-  <div class="selected-publication">
-    {% bibliography --group_by none --query @*[homepage_order=3] %}
-  </div>
-  <div class="selected-publication">
-    {% bibliography --group_by none --query @*[homepage_order=4] %}
-  </div>
-  <div class="selected-publication">
-    {% bibliography --group_by none --query @*[homepage_order=5] %}
-  </div>
-  <div class="selected-publication">
-    {% bibliography --group_by none --query @*[homepage_order=6] %}
-  </div>
-</div>
+{% endif %}

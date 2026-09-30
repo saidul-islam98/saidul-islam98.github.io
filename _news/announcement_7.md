@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[DSAgentBench](https://arxiv.org/abs/2608.10366), a benchmark for end-to-end data-science workflows in real computer environments, was accepted to EMNLP 2026 Main.
+[DSAgentBench](https://arxiv.org/abs/2608.10366) was accepted at EMNLP 2026 Main.

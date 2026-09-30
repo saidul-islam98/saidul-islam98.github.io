@@ -1,9 +1,7 @@
 - id: dsagentbench
   title: DSAgentBench
   category: agents-evaluation
-  homepage: true
-  homepage_feature: true
-  homepage_order: 1
+  homepage: false
   work_order: 1
   meta: EMNLP 2026 Main
   summary: A benchmark for evaluating whether AI agents can complete end-to-end data-science workflows in real computer environments using notebooks, IDEs, terminals, browsers, and databases.
@@ -24,13 +22,12 @@
   title: "FLAME: Fine-Grained Benchmark Generation"
   category: agents-evaluation
   homepage: true
-  homepage_feature: true
   homepage_order: 2
   work_order: 2
-  meta: NeurIPS 2026 E&D Track · Vector Institute · Foundation-model evaluation
-  summary: A reference-grounded multi-agent pipeline for generating, verifying, repairing, and deduplicating technically demanding evaluation tasks.
-  contribution: Built OCR ingestion and a multi-agent designer and verifier workflow with iterative repair, trace-aware validation, and semantic deduplication.
-  evidence: Trace-aware quality control connects source ingestion to final benchmark validation.
+  meta: NeurIPS 2026 E&D Track · Foundation-model evaluation
+  summary: Generate evaluation tasks grounded in textbooks and reference material for fine-grained model assessment.
+  contribution: Built OCR ingestion and a multi-agent designer and verifier workflow with iterative repair and semantic deduplication.
+  evidence: Generated benchmarks across three domains and evaluated 12 foundation models. Accepted at NeurIPS 2026 E&D Track.
   tags:
     - OCR
     - Multi-agent Systems
@@ -45,12 +42,12 @@
   title: Open-PMC-18M
   category: multimodal-systems
   homepage: true
-  homepage_order: 3
+  homepage_order: 1
   work_order: 3
   meta: MICCAI 2026 · Multimodal medical AI
-  summary: An open multimodal dataset and scalable pipeline linking biomedical figures with captions and subcaptions for medical vision-language learning.
-  contribution: Owned preprocessing and batched vLLM inference for Qwen2.5-VL and Qwen2.5 summary generation.
-  evidence: Scales compound-figure extraction, summarization, and OpenCLIP training across 18 million biomedical image-text pairs with optimized batched VLM inference.
+  summary: Scalable extraction and summarization of biomedical figures for medical vision-language learning.
+  contribution: Owned preprocessing and optimized batched vLLM inference for Qwen2.5-VL extraction and Qwen2.5 summary generation.
+  evidence: Reduced extraction latency from 4.0s to 1.2s per sample and summary generation from 4.0s to 0.6s, supporting OpenCLIP training on 18M image-text pairs.
   tags:
     - VLMs
     - vLLM
@@ -65,7 +62,7 @@
   title: RL-Text2Vis
   category: post-training-generation
   homepage: true
-  homepage_order: 4
+  homepage_order: 3
   work_order: 4
   meta: EACL 2026 Main · Post-training
   summary: A GRPO framework that evaluates text-to-visualization outputs after code execution using textual, executable, and visual feedback.
@@ -86,8 +83,7 @@
 - id: dashboardqa
   title: DashboardQA
   category: agents-evaluation
-  homepage: true
-  homepage_order: 5
+  homepage: false
   work_order: 5
   meta: EACL 2026 Findings · Multimodal agents
   summary: A benchmark for agents that answer questions through real interactive dashboards.
@@ -108,8 +104,7 @@
 - id: chartqapro
   title: ChartQAPro
   category: multimodal-systems
-  homepage: true
-  homepage_order: 6
+  homepage: false
   work_order: 6
   meta: ACL 2025 Findings · Benchmarking
   summary: A challenging chart question-answering benchmark built around diverse real-world visualizations.

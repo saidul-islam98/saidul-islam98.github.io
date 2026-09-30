@@ -1,15 +1,32 @@
 {% assign project = include.project %}
-<article class="{{ include.card_class }}{% if include.home and project.homepage_feature %} work-card-feature{% endif %}">
+<article class="{{ include.card_class }}">
   <p class="work-meta">{{ project.meta }}</p>
   <h3>{{ project.title }}</h3>
-  <p class="project-summary">{{ project.summary }}</p>
+  <p class="project-summary">
+    {% if include.home -%}
+      <strong>Problem:</strong>
+    {% endif %}
+    {{ project.summary }}
+  </p>
   {% if project.contribution %}
-    <p class="project-contribution"><strong>Contribution:</strong> {{ project.contribution }}</p>
+    <p class="project-contribution">
+      <strong>
+        {%- if include.home %}My contribution:{% else %}Contribution:{% endif -%}
+      </strong>
+      {{ project.contribution }}
+    </p>
   {% endif %}
-  <p class="project-impact"><strong>Evidence:</strong> {{ project.evidence }}</p>
+  <p class="project-impact">
+    <strong>
+      {%- if include.home %}Result:{% else %}Evidence:{% endif -%}
+    </strong>
+    {{ project.evidence }}
+  </p>
   {% if project.tags %}
     <ul class="project-tags" aria-label="{{ project.title }} topics">
-      {% for tag in project.tags %}
+      {% assign tag_limit = project.tags.size %}
+      {% if include.home %}{% assign tag_limit = 3 %}{% endif %}
+      {% for tag in project.tags limit: tag_limit %}
         <li>{{ tag }}</li>
       {% endfor %}
     </ul>
