@@ -21,13 +21,13 @@
       url: https://github.com/vis-nlp/DSAgentBench
 
 - id: fine-grained-benchmark-generation
-  title: Fine-Grained Benchmark Generation
+  title: "FLAME: Fine-Grained Benchmark Generation"
   category: agents-evaluation
   homepage: true
   homepage_feature: true
   homepage_order: 2
   work_order: 2
-  meta: Vector Institute · Foundation-model evaluation · 2026 preprint
+  meta: NeurIPS 2026 E&D Track · Vector Institute · Foundation-model evaluation
   summary: A reference-grounded multi-agent pipeline for generating, verifying, repairing, and deduplicating technically demanding evaluation tasks.
   contribution: Built OCR ingestion and a multi-agent designer and verifier workflow with iterative repair, trace-aware validation, and semantic deduplication.
   evidence: Trace-aware quality control connects source ingestion to final benchmark validation.

@@ -30,20 +30,31 @@ nav: false
       </ul>
     </div>
     <div class="hero-portrait">
-      <img src="{{ '/assets/img/saidul-profile-hero.webp' | relative_url }}" alt="Portrait of Mohammed Saidul Islam" width="960" height="1200" fetchpriority="high">
+      <img src="{{ '/assets/img/saidul-profile-hero.webp' | relative_url }}" alt="Portrait of Mohammed Saidul Islam" width="960" height="960" fetchpriority="high">
     </div>
     <article class="hero-latest" aria-labelledby="latest-work-title">
-      <p class="hero-latest-label">Latest <span>EMNLP 2026 Main</span></p>
+      <p class="hero-latest-label">Latest <span>NeurIPS 2026 E&amp;D Track</span></p>
       <div>
-        <h2 id="latest-work-title">DSAgentBench</h2>
-        <p>Can agents automate end-to-end data-science workflows in real computer environments?</p>
+        <h2 id="latest-work-title">FLAME</h2>
+        <p>Fine-Grained Benchmark Generation for Comprehensive Evaluation of Foundation Models.</p>
       </div>
-      <p class="hero-latest-stats">275 tasks <span aria-hidden="true">·</span> 15 models <span aria-hidden="true">·</span> deterministic evaluators <span aria-hidden="true">·</span> 56.70% best result</p>
       <div class="work-links">
-        <a href="https://arxiv.org/abs/2608.10366">Paper <span aria-hidden="true">↗</span></a>
-        <a href="https://github.com/vis-nlp/DSAgentBench">Code <span aria-hidden="true">↗</span></a>
+        <a href="https://arxiv.org/abs/2605.18824">Paper <span aria-hidden="true">↗</span></a>
       </div>
+      <p class="hero-latest-stats">Accepted at NeurIPS 2026 <span aria-hidden="true">·</span> Evaluations &amp; Datasets Track</p>
     </article>
+  </section>
+
+  <section class="portfolio-section updates-section" aria-labelledby="updates-heading">
+    <div class="section-heading">
+      <div>
+        <p class="section-marker">Now</p>
+        <h2 id="updates-heading">Recent milestones</h2>
+      </div>
+      <p>Recent publication and career updates.</p>
+    </div>
+    {% include news.liquid limit=true %}
+    <div class="section-action"><a class="text-link" href="{{ '/news/' | relative_url }}">View all news <span aria-hidden="true">→</span></a></div>
   </section>
 
   <section class="portfolio-section selected-work-section" aria-labelledby="featured-heading">
@@ -90,18 +101,6 @@ nav: false
     </div>
     <div class="education-snapshot"><span>MSc Computer Science - York University</span><span>BSc Computer Science and Engineering - Islamic University of Technology</span></div>
     <div class="section-action"><a class="text-link" href="{{ '/experience/' | relative_url }}">View full experience <span aria-hidden="true">→</span></a></div>
-  </section>
-
-  <section class="portfolio-section updates-section" aria-labelledby="updates-heading">
-    <div class="section-heading">
-      <div>
-        <p class="section-marker">Now</p>
-        <h2 id="updates-heading">Recent milestones</h2>
-      </div>
-      <p>Recent publication and career updates.</p>
-    </div>
-    {% include news.liquid limit=true %}
-    <div class="section-action"><a class="text-link" href="{{ '/news/' | relative_url }}">View all news <span aria-hidden="true">→</span></a></div>
   </section>
 
   <section class="portfolio-section service-section" aria-labelledby="service-heading">
