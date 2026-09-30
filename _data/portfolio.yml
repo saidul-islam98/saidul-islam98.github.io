@@ -23,6 +23,11 @@
   category: agents-evaluation
   homepage: true
   homepage_order: 2
+  homepage_title: "FLAME"
+  homepage_meta: "NeurIPS 2026 E&D Track"
+  homepage_summary: "Reference-grounded evaluation tasks for foundation models."
+  homepage_contribution: "Built OCR ingestion, designer/verifier agents, iterative repair, and semantic deduplication."
+  homepage_result: "Generated benchmarks for machine learning and finance."
   work_order: 2
   meta: NeurIPS 2026 E&D Track · Foundation-model evaluation
   summary: Generate evaluation tasks grounded in textbooks and reference material for fine-grained model assessment.
@@ -43,11 +48,15 @@
   category: multimodal-systems
   homepage: true
   homepage_order: 1
+  homepage_meta: "MICCAI 2026 · Multimodal ML"
+  homepage_summary: "Biomedical figure extraction and summarization for medical vision-language learning."
+  homepage_contribution: "Owned preprocessing and optimized batched vLLM inference for extraction and summaries."
+  homepage_result: "Supported OpenCLIP training with the resulting image-text pairs."
   work_order: 3
   meta: MICCAI 2026 · Multimodal medical AI
   summary: Scalable extraction and summarization of biomedical figures for medical vision-language learning.
   contribution: Owned preprocessing and optimized batched vLLM inference for Qwen2.5-VL extraction and Qwen2.5 summary generation.
-  evidence: Reduced extraction latency from 4.0s to 1.2s per sample and summary generation from 4.0s to 0.6s, supporting OpenCLIP training on 18M image-text pairs.
+  evidence: "In this pipeline, batched vLLM reduced Qwen2.5-VL-32B extraction from 4.0s to 1.2s per sample on A100 GPUs. Qwen2.5-14B summary generation fell from 4.0s to 0.6s per sample using vLLM batch generation. The resulting pairs supported OpenCLIP training on 18M image-text pairs."
   tags:
     - VLMs
     - vLLM
@@ -63,6 +72,10 @@
   category: post-training-generation
   homepage: true
   homepage_order: 3
+  homepage_meta: "EACL 2026 Main · Post-training"
+  homepage_summary: "Post-training for executable, reliable chart generation."
+  homepage_contribution: "Co-developed GRPO feedback from generated text, code execution, and rendered charts."
+  homepage_result: "Improved executability and chart quality over prompting and supervised baselines."
   work_order: 4
   meta: EACL 2026 Main · Post-training
   summary: A GRPO framework that evaluates text-to-visualization outputs after code execution using textual, executable, and visual feedback.

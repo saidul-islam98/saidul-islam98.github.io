@@ -1,26 +1,35 @@
 {% assign project = include.project %}
+{% assign card_title = project.title %}
+{% assign card_meta = project.meta %}
+{% assign card_summary = project.summary %}
+{% assign card_contribution = project.contribution %}
+{% assign card_result = project.evidence %}
+{% if include.home %}
+  {% assign card_title = project.homepage_title | default: card_title %}
+  {% assign card_meta = project.homepage_meta | default: card_meta %}
+  {% assign card_summary = project.homepage_summary | default: card_summary %}
+  {% assign card_contribution = project.homepage_contribution | default: card_contribution %}
+  {% assign card_result = project.homepage_result | default: card_result %}
+{% endif %}
 <article class="{{ include.card_class }}">
-  <p class="work-meta">{{ project.meta }}</p>
-  <h3>{{ project.title }}</h3>
+  <p class="work-meta">{{ card_meta }}</p>
+  <h3>{{ card_title }}</h3>
   <p class="project-summary">
-    {% if include.home -%}
-      <strong>Problem:</strong>
-    {% endif %}
-    {{ project.summary }}
+    {{ card_summary }}
   </p>
-  {% if project.contribution %}
+  {% if card_contribution %}
     <p class="project-contribution">
       <strong>
-        {%- if include.home %}My contribution:{% else %}Contribution:{% endif -%}
+        {%- if include.home %}My role:{% else %}Contribution:{% endif -%}
       </strong>
-      {{ project.contribution }}
+      {{ card_contribution }}
     </p>
   {% endif %}
   <p class="project-impact">
     <strong>
       {%- if include.home %}Result:{% else %}Evidence:{% endif -%}
     </strong>
-    {{ project.evidence }}
+    {{ card_result }}
   </p>
   {% if project.tags %}
     <ul class="project-tags" aria-label="{{ project.title }} topics">

@@ -27,11 +27,6 @@ nav: false
     <div class="hero-portrait">
       <img src="{{ '/assets/img/saidul-profile-hero.webp' | relative_url }}" alt="Portrait of Mohammed Saidul Islam" width="960" height="960" fetchpriority="high">
     </div>
-    <dl class="hero-results" aria-label="Selected engineering results">
-      <div><dt>VLM extraction latency</dt><dd>4.0s <span aria-label="reduced to">→</span> 1.2s<span class="result-context">per sample · <span class="result-model">Qwen2.5-VL</span></span></dd></div>
-      <div><dt>Summary generation latency</dt><dd>4.0s <span aria-label="reduced to">→</span> 0.6s<span class="result-context">per sample · batched inference</span></dd></div>
-      <div><dt>Multimodal training data</dt><dd>18M<span class="result-context">image-text pairs · OpenCLIP</span></dd></div>
-    </dl>
     <article class="hero-latest" aria-labelledby="latest-work-title">
       <p class="hero-latest-label">Latest <span>NeurIPS 2026 E&amp;D Track</span></p>
       <div>
